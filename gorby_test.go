@@ -130,7 +130,7 @@ func TestRuneBuffCapacity(t *testing.T) {
 		rb := NewRuneBuff(size)
 		c := rb.Capacity()
 		if c != size {
-			// special case we always want capacity to be >= 1
+			// special case we always want capacity to be >= KRUNE_BUFF_MIN
 			if !(c == KRUNE_BUFF_MIN && size < KRUNE_BUFF_MIN) {
 				t.Fatalf(tag+" fail, expected %v, found %v", size, c)
 			}

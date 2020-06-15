@@ -1,18 +1,3 @@
-**go**lang **r**une **b**uffer 
-
-over 90% test coverage
-
-### get
-
-```shell
-$ go get github.com/dorind/gorby
-```
-
-`gorby` can be very useful when dealing with unicode strings, it's a reusable buffer that grows automatically on demand, allows char/rune indexing and it can write it's buffer to an `io.Writer` implementor by encoding each rune to utf8
-
-### usage example
-
-```go
 package main
 
 import (
@@ -82,10 +67,6 @@ func main() {
 	gorby_example2()
 	gorby_example3()
 }
-
-
-
-```
 
 
 

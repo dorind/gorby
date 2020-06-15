@@ -33,7 +33,7 @@ import (
 )
 
 const (
-	KRUNE_BUFF_MIN = 32 // 32 bytes is a nice sweet spot ~1/2 cpu cache line
+	KRUNE_BUFF_MIN = 32 // 32 runes is a nice sweet spot 2 cpu cache lines
 )
 
 var ErrBounds = errors.New("Rune index out of bounds!")
